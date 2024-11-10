@@ -2,7 +2,7 @@ $(window).on("load", function () {
   $("body").removeClass("overflow");
 });
 $(document).ready(function () {
-  /***** Menu *****/
+  /************************************ Menu ************************************/
   if ($(window).width() <= 767) {
     $(".menu-btn").click(function () {
       $(".header-nav").addClass("active");
@@ -15,6 +15,12 @@ $(document).ready(function () {
       $(".overlay").fadeOut();
     });
   }
+
+  /************************************ Search ************************************/
+  $(".header-search").click(function () {
+    $(".header-search").toggleClass("active");
+    $(".search-body").fadeToggle();
+  });
   /************************************ Main Slider ************************************/
   var mainSwiper = new Swiper(".main-slider .swiper", {
     a11y: {
