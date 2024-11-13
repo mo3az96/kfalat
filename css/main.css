@@ -181,27 +181,6 @@ input::-webkit-inner-spin-button, input::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
-select {
-  background-image: url(../images/arrow.png);
-  background-repeat: no-repeat;
-  background-size: 8px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-position: left 25px top 50%;
-}
-html[dir=ltr] select {
-  background-position: right 25px top 50%;
-}
-@media (max-width: 767px) {
-  select {
-    background-position: left 10px top 50%;
-  }
-  html[dir=ltr] select {
-    background-position: right 10px top 50%;
-  }
-}
-
 .fa-linkedin::before {
   content: "\f0e1";
 }

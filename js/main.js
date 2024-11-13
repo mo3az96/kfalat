@@ -168,4 +168,10 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+
+  /************************************ Blog Slider ************************************/
+  $(".filter-btn").click(function () {
+    $(".filter-btn").toggleClass("active");
+    $(".filter-body").slideToggle();
+  });
 });
