@@ -418,6 +418,8 @@ html[dir=rtl] .swiper-btn i {
   align-items: center;
   justify-content: center;
   padding: 50px 0 0;
+  position: relative;
+  overflow: hidden;
 }
 @media (min-width: 1500px) {
   .main-content {
@@ -437,8 +439,17 @@ html[dir=rtl] .swiper-btn i {
     height: 400px;
   }
 }
+.main-content .pattern {
+  position: absolute;
+  top: -30px;
+  inset-inline-end: -100px;
+  opacity: 0.1;
+  z-index: 1;
+}
 .main-content .main-text {
   color: #fff;
+  position: relative;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .main-content .main-text {
@@ -1297,6 +1308,16 @@ html[dir=rtl] .swiper-btn i {
   background-color: var(--primary-color);
   padding: 105px 0 95px;
   color: #fff;
+  position: relative;
+  transform: perspective(1px);
+  overflow: hidden;
+}
+.footer-section .pattern {
+  position: absolute;
+  bottom: -115px;
+  inset-inline-start: -70px;
+  opacity: 0.15;
+  z-index: -1;
 }
 @media (max-width: 991px) {
   .footer-section {
@@ -1396,6 +1417,16 @@ html[dir=rtl] .swiper-btn i {
 
 .projects-section {
   padding: 126px 0 75px;
+  position: relative;
+  transform: perspective(1px);
+  overflow: hidden;
+}
+.projects-section .pattern {
+  position: absolute;
+  top: -130px;
+  inset-inline-start: -30px;
+  opacity: 0.05;
+  z-index: -1;
 }
 @media (max-width: 767px) {
   .projects-section {
@@ -1454,6 +1485,15 @@ html[dir=rtl] .swiper-btn i {
   padding: 135px 0;
   position: relative;
   background-color: #eeeeee;
+  transform: perspective(1px);
+  overflow: hidden;
+}
+.faq-section .pattern {
+  position: absolute;
+  top: -130px;
+  inset-inline-start: -30px;
+  opacity: 0.05;
+  z-index: -1;
 }
 @media (max-width: 767px) {
   .faq-section {
