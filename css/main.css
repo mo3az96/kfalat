@@ -50,6 +50,7 @@ body {
   font-family: tajawal;
   font-weight: 400;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   background-color: #f1f1f1;
@@ -882,6 +883,12 @@ html[dir=rtl] .swiper-btn i {
 }
 .faq-item .faq-body p {
   margin: 0;
+}
+
+header {
+  background-color: #fff;
+  position: relative;
+  z-index: 4;
 }
 
 .top-header {
