@@ -1165,7 +1165,14 @@ html[dir=rtl] .swiper-btn i {
 
 .nav-foot {
   display: none;
+  flex-direction: column;
+  gap: 15px;
   padding: 15px 25px;
+}
+.nav-foot .header-btn {
+  display: flex;
+  width: 100%;
+  margin: 0;
 }
 
 @media (max-width: 767px) {
