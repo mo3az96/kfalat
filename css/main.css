@@ -182,16 +182,27 @@ input::-webkit-inner-spin-button, input::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
-.fa-linkedin::before {
+.la-linkedin::before {
   content: "\f0e1";
 }
 
-.fa-twitter::before {
-  content: "\e61b";
+.la-facebook::before {
+  content: "\f39e";
 }
 
-.fa-facebook::before {
-  content: "\f39e";
+.la-search {
+  transform: scaleX(-1);
+}
+
+.la-twitter::before {
+  display: flex;
+  content: "";
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btns-content {
@@ -1399,20 +1410,32 @@ header {
   flex-direction: column;
   gap: 21px;
 }
-.footer-contacts a {
+.footer-contacts a,
+.footer-contacts span {
   font-size: 16px;
   color: #fff;
   font-weight: 400;
   display: inline-flex;
-  align-items: center;
+  align-items: start;
   gap: 10px;
   transition: all 0.3s ease-in-out;
 }
-.footer-contacts a:hover {
+.footer-contacts a i,
+.footer-contacts span i {
+  display: inline-flex;
+  width: 24px;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.footer-contacts a a:hover,
+.footer-contacts span a:hover {
   color: var(--secondary-color);
 }
 @media (max-width: 767px) {
-  .footer-contacts a {
+  .footer-contacts a,
+  .footer-contacts span {
     font-size: 14px;
   }
 }

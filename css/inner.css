@@ -252,14 +252,6 @@
   }
 }
 
-.la-linkedin::before {
-  content: "\f0e1";
-}
-
-.la-facebook::before {
-  content: "\f39e";
-}
-
 .projects_page-content {
   width: 100%;
   max-width: 1342px;
@@ -784,7 +776,10 @@ html[dir=rtl] .project_info-form .form-control {
   background-color: #3b5998;
 }
 .share-method.twitter {
-  background-color: #55acee;
+  background-color: #14171a;
+}
+.share-method.twitter i::before {
+  filter: brightness(0) invert(1);
 }
 .share-method.whatsapp {
   background-color: #0dbb42;
